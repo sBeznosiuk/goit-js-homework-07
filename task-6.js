@@ -31,14 +31,13 @@ function handleInputClasses({ target }) {
 
 function handleInputValidation ({ target }) {
     const dataAttribute = inputRef.getAttribute('data-length')
-    const { value } = target;
 
-    if (value.length == dataAttribute) {
+    if (target.value.length == dataAttribute) {
         target.classList.add('valid')
         target.classList.remove('invalid')
     }
     
-    if (value.length != dataAttribute) {
+    if (target.value.length != dataAttribute) {
         target.classList.add('invalid')
         target.classList.remove('valid')
     }
