@@ -6,10 +6,9 @@ const divRef = document.querySelector('#boxes')
 inputRef.addEventListener('change', createBoxes);
 btnDestroy.addEventListener('click', destroyBoxes);
 
+
 function createBoxes(amount) {
 
-  for (let i = 0; i < event.target.value; i = amount) {
-  
       btnRender.addEventListener('click', () => {
         const box = document.createElement('div')
         divRef.appendChild(box)
@@ -23,9 +22,8 @@ function createBoxes(amount) {
           }
           
         box.style.backgroundColor = `rgb(${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(Math.random() * (255 - 0) + 0)})`;
-        })
-
-    }
+      })
+    
 }
 
 function destroyBoxes() {
