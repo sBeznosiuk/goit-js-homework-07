@@ -9,17 +9,17 @@ btnDestroy.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
 
-      btnRender.addEventListener('click', () => {
+    btnRender.addEventListener('click', () => {
         const box = document.createElement('div')
         divRef.appendChild(box)
         console.log(box);
         
         const children = divRef.childNodes;
 
-          for (let k = 0; k < children.length; k++) {
-              children[k].style.width = `${k * 10 + 30}px`
-              children[k].style.height = `${k * 10 + 30}px`
-          }
+        children.forEach((child, index) => {
+              child.style.width = `${index * 10 + 30}px`
+              child.style.height = `${index * 10 + 30}px`
+        })
           
         box.style.backgroundColor = `rgb(${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(Math.random() * (255 - 0) + 0)}, ${Math.floor(Math.random() * (255 - 0) + 0)})`;
       })
