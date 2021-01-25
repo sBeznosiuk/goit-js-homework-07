@@ -4,7 +4,7 @@ const spanRef = document.querySelector('#name-output')
 // inputRef.addEventListener('input', (e) => {
 //     const textValue = e.target.value;
     
-//     textValue ? spanRef.textContent = e.target.value : spanRef.textContent = 'незнакомец'
+//     textValue ? spanRef.textContent = textValue : spanRef.textContent = 'незнакомец'
 // })
 
 inputRef.addEventListener('input', handleInputValue)
