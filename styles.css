@@ -2,8 +2,30 @@
   display: flex;
 }
 
+#gallery img {
+  margin-right: 30px;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
 li {
   list-style: none;
+}
+
+button {
+  box-sizing: content-box;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  border-color: blue;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  background-color: #eeeeee;
 }
 
 #validation-input {
